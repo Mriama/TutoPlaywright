@@ -8,6 +8,9 @@ jobs:
   test:
     #timeout-minutes: 60
     runs-on: ubuntu-latest
+    # Ajoute "permissions" pour s'assurer que le bot GitHub Actions dispose des droits de modification (write) sur le contenu du dépôt, ce qui est nécessaire pour pousser sur gh-pages.
+    permissions:      
+       contents: write  # Donne l'accès en écriture pour le contenu du dépôt
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
