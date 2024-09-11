@@ -15,6 +15,7 @@ export const test = base.extend<mFixture>({
     basePage: async ({ page }, use) => {
         const basePage = new BasePage(page);
         await basePage.goto();
+        await page.setViewportSize({ width: 1415, height: 1080 });
         await use(basePage);
         await basePage.exitPage();
     },

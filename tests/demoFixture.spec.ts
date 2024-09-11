@@ -8,7 +8,7 @@ const firstName = faker.person.firstName();
 const password = faker.internet.password();
 
 
-test('Register User',async ({ homePage,loginPage,registerPage, page }) => {
+test.only('Register User',async ({ homePage,loginPage,registerPage, page }) => {
 
 
     expect(page.url()).toBe('https://automationexercise.com/');
