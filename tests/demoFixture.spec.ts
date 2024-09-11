@@ -8,7 +8,7 @@ const firstName = faker.person.firstName();
 const password = faker.internet.password();
 
 
-test.only('Register User',async ({ homePage,loginPage,registerPage, page }) => {
+test('Register User',async ({ homePage,loginPage,registerPage, page }) => {
 
 
     expect(page.url()).toBe('https://automationexercise.com/');
@@ -102,7 +102,7 @@ test('Logout User @AT-17',{ tag: '@AT-17'},async ({ homePage,loginPage,page }) =
     const data = JSON.parse(fs.readFileSync('tests/data.json', 'utf8'));
 
     //Navigate to url 'http://automationexercise.com'
-    expect(page.url()).toBe('https://automationexercise.com/');
+    expect(page.url()).toBe('https://automationexercise.fr/');
 
     await homePage.handleConsentButton();
 
