@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","3600","Register User","chromium","Wed Sep 11 15:33:37 UTC 2024","passed","Wed Sep 11 15:33:40 UTC 2024","","demoFixture.spec.ts","",""
-"","4720","Register User","firefox","Wed Sep 11 15:33:42 UTC 2024","passed","Wed Sep 11 15:33:47 UTC 2024","","demoFixture.spec.ts","",""
+"","4382","Register User","firefox","Wed Sep 11 16:28:02 UTC 2024","passed","Wed Sep 11 16:28:06 UTC 2024","","demoFixture.spec.ts","",""
+"","3486","Register User","chromium","Wed Sep 11 16:27:57 UTC 2024","passed","Wed Sep 11 16:28:00 UTC 2024","","demoFixture.spec.ts","",""
