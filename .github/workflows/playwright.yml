@@ -30,9 +30,13 @@ jobs:
       with:
         name: allure-report
         path: allure-report  # Le répertoire contenant le rapport généré par Allure
-        
+
     - name: Deploy Allure Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }} # Utilise le token GitHub Actions pour publier le rapport
         publish_dir: ./allure-report  # Répertoire contenant les fichiers à publier sur GitHub Pages
+
+    - name: Notify Slack # Envoie une notification Slack avec le lien vers le rapport Allure. (détails configuration à voir sur le fichier README)
+      run: |
+            curl -X POST -H 'Content-type: application/json' --data '{"text":"📊 *Le rapport Allure est maintenant disponible !* 🚀\n\nVous pouvez consulter le rapport complet en suivant ce lien : <https://mriama.github.io/TutoPlaywright/|Allure Report>"}' ${{ secrets.SLACK_WEBHOOK_URL }}
