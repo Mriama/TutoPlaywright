@@ -102,7 +102,7 @@ test('Logout User @AT-17',{ tag: '@AT-17'},async ({ homePage,loginPage,page }) =
     const data = JSON.parse(fs.readFileSync('tests/data.json', 'utf8'));
 
     //Navigate to url 'http://automationexercise.com'
-    expect(page.url()).toBe('https://automationexercise.fr/');
+    expect(page.url()).toBe('https://automationexercise.com/');
 
     await homePage.handleConsentButton();
 

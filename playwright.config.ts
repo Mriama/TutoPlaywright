@@ -19,7 +19,7 @@ export default defineConfig({
   // desactiver la restriction pour les tests .only dans CI
   forbidOnly: false,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
