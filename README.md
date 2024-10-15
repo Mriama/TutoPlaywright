@@ -32,7 +32,7 @@ Possibilité d'y acceder directement en consultant depuis github le workflow dan
         Accède à Slack API: https://api.slack.com/
         Clique sur "Your Apps" dans le menu en haut à droite.
         Clique sur "Create New App" et sélectionne "From scratch".
-        Donne un nom à ton application et choisis le workspace où elle sera installée, puis clique sur "Create App".
+        Donner un nom à ton application et choisir le workspace où elle sera installée, puis clique sur "Create App".
         Dans le menu de gauche, sous "Features", clique sur "Incoming Webhooks".
         Active les "Incoming Webhooks" en utilisant le bouton "Activate Incoming Webhooks".
         Clique sur "Add New Webhook to Workspace".

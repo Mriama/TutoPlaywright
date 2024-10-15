@@ -8,7 +8,7 @@ const firstName = faker.person.firstName();
 const password = faker.internet.password();
 
 
-test('Register User',async ({ homePage,loginPage,registerPage, page }) => {
+test.only('@XSP-58 Register User',{tag: '@XSP-58'} , async ({ homePage,loginPage,registerPage, page }) => {
 
 
     expect(page.url()).toBe('https://automationexercise.com/');
@@ -53,7 +53,7 @@ test('Register User',async ({ homePage,loginPage,registerPage, page }) => {
     fs.writeFileSync('tests/data.json', JSON.stringify({username: email, password: password}),'utf8');
 });
 
-test('Login User with correct email and password @AT-15',{tag : '@AT-15'},async ({ homePage, loginPage,page }) => {
+test('@XSP15 - Login User with correct email and password',async ({ homePage, loginPage,page }) => {
 
     const data = JSON.parse(fs.readFileSync('tests/data.json', 'utf8'));
 
@@ -75,7 +75,7 @@ test('Login User with correct email and password @AT-15',{tag : '@AT-15'},async 
     await loginPage.login(data.username, data.password);
 });
 
-test('Login User with incorrect email and password @AT-16',{tag : '@AT-16'},async ({ homePage, loginPage,page }) => {
+test('@XSP25 - Login User with incorrect email and password',{tag : '@AT-16'},async ({ homePage, loginPage,page }) => {
 
     //Navigate to url 'http://automationexercise.com'
     expect(page.url()).toBe('https://automationexercise.com/');
@@ -97,7 +97,7 @@ test('Login User with incorrect email and password @AT-16',{tag : '@AT-16'},asyn
     await loginPage.isAltTextVisible('Your email or password is incorrect!');
 });
 
-test('Logout User @AT-17',{ tag: '@AT-17'},async ({ homePage,loginPage,page }) => {
+test('Logout User',async ({ homePage,loginPage,page }) => {
 
     const data = JSON.parse(fs.readFileSync('tests/data.json', 'utf8'));
 
