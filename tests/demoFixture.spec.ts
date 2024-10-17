@@ -8,7 +8,7 @@ const firstName = faker.person.firstName();
 const password = faker.internet.password();
 
 
-test.only('@XSP-58 Register User',{tag: '@XSP-58'} , async ({ homePage,loginPage,registerPage, page }) => {
+test.only('@XSP-58 Register User', async ({ homePage,loginPage,registerPage, page }) => {
 
 
     expect(page.url()).toBe('https://automationexercise.com/');
@@ -75,7 +75,7 @@ test('@XSP15 - Login User with correct email and password',async ({ homePage, lo
     await loginPage.login(data.username, data.password);
 });
 
-test('@XSP25 - Login User with incorrect email and password',{tag : '@AT-16'},async ({ homePage, loginPage,page }) => {
+test('@XSP25 - Login User with incorrect email and password' ,async ({ homePage, loginPage,page }) => {
 
     //Navigate to url 'http://automationexercise.com'
     expect(page.url()).toBe('https://automationexercise.com/');
