@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","4186","@XSP-58 Register User","firefox","Tue Oct 22 02:11:46 UTC 2024","passed","Tue Oct 22 02:11:51 UTC 2024","","demoFixture.spec.ts","",""
-"","6003","@XSP-58 Register User","webkit","Tue Oct 22 02:11:53 UTC 2024","passed","Tue Oct 22 02:11:59 UTC 2024","","demoFixture.spec.ts","",""
-"","2740","@XSP-58 Register User","chromium","Tue Oct 22 02:11:42 UTC 2024","passed","Tue Oct 22 02:11:45 UTC 2024","","demoFixture.spec.ts","",""
+"","3168","@XSP-58 Register User","chromium","Wed Oct 23 02:10:36 UTC 2024","passed","Wed Oct 23 02:10:39 UTC 2024","","demoFixture.spec.ts","",""
+"","4992","@XSP-58 Register User","webkit","Wed Oct 23 02:10:47 UTC 2024","passed","Wed Oct 23 02:10:52 UTC 2024","","demoFixture.spec.ts","",""
+"","3772","@XSP-58 Register User","firefox","Wed Oct 23 02:10:41 UTC 2024","passed","Wed Oct 23 02:10:45 UTC 2024","","demoFixture.spec.ts","",""
