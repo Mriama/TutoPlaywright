@@ -4,8 +4,8 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  schedule:
-    - cron: '0 1 * * *'  # Déclenche le workflow chaque jour à 1h00 UTC
+ # schedule:
+ #   - cron: '0 1 * * *'  # Déclenche le workflow chaque jour à 1h00 UTC
 jobs:
   test:
     #timeout-minutes: 60
